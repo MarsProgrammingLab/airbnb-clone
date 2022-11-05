@@ -2,6 +2,7 @@ import React from "react";
 import star from "../../public/img/star.png";
 
 export default function Card(props) {
+  const photo = `../../public/img/${props.img}`;
   let badgeText;
   if (props.cardData.openSpots === 0) {
     badgeText = "SOLD OUT";
@@ -12,7 +13,7 @@ export default function Card(props) {
   return (
     <div className="card">
       {badgeText && <div className="card--badge">{badgeText}</div>}
-      <img src={`../../public/img/${props.img}`} className="card--image" />
+      <img src={photo} className="card--image" />
       <div className="card--stats">
         <img src={star} className="card--star" />
         <span>{props.cardData.stats.rating}</span>
