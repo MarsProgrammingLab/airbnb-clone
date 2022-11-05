@@ -1,4 +1,4 @@
-import React from "React";
+import React from "react";
 import star from "../../public/img/star.png";
 
 export default function Card(props) {
