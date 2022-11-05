@@ -6,7 +6,7 @@ import Data from "./data";
 
 function App() {
   const cards = Data.map((cardData) => {
-    const photo = `${cardData.coverImg}`;
+    const photo = `../../public/img/${cardData.coverImg}`;
     return <Card key={cardData.id} img={photo} cardData={cardData} />;
   });
   return (
