@@ -6,7 +6,7 @@ import Data from "./data";
 
 function App() {
   const cards = Data.map((cardData) => {
-    const photo = `../../public/img/${cardData.coverImg}`; // concat path to images with object prop 'coverImg'
+    const photo = `${cardData.coverImg}`;
     return <Card key={cardData.id} img={photo} cardData={cardData} />;
   });
   return (
